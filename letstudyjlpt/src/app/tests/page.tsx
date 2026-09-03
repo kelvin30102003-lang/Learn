@@ -1,0 +1,3 @@
+import TestCard from "@/components/TestCard";
+import { tests } from "@/data/mock";
+export default function TestsPage() { return <div className="mx-auto max-w-6xl px-5 py-14"><div className="max-w-2xl"><p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--red)]">Practice library</p><h1 className="mt-3 text-4xl font-semibold tracking-tight">Choose your next session.</h1><p className="mt-4 leading-7 text-[var(--ink-muted)]">Short practice or a full simulation. Every question is original and designed to help you build useful N5 instincts.</p></div><div className="mt-10 grid gap-5 md:grid-cols-3">{tests.map(test => <TestCard key={test.id} test={test}/>)}</div></div>; }

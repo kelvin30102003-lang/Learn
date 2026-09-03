@@ -1,0 +1,1 @@
+export default function Footer() { return <footer className="border-t border-[var(--line)] bg-white"><div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-8 text-sm text-[var(--ink-muted)] sm:flex-row sm:items-center sm:justify-between"><p>© 2026 kotoba.lab</p><p>Practice boldly. Learn gently.</p></div></footer>; }

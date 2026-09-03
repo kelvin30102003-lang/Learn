@@ -1,0 +1,2 @@
+import { Section } from "@/types/question";
+export default function SectionBadge({ section }: { section: Section }) { return <span className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--red)]">{section}</span>; }
