@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "surface": "#f8f9ff",
+        "tertiary-container": "#0078b6",
+        "secondary-fixed": "#dae2fd",
+        "on-tertiary": "#ffffff",
+        "surface-tint": "#bf0715",
+        "on-primary-fixed": "#410002",
+        "surface-container-high": "#dce9ff",
+        "on-secondary": "#ffffff",
+        "outline": "#916f6b",
+        "surface-variant": "#d3e4fe",
+        "on-tertiary-fixed": "#001d31",
+        "surface-dim": "#cbdbf5",
+        "tertiary-fixed": "#cce5ff",
+        "on-tertiary-fixed-variant": "#004b73",
+        "inverse-on-surface": "#eaf1ff",
+        "surface-container": "#e5eeff",
+        "secondary-fixed-dim": "#bec6e0",
+        "surface-bright": "#f8f9ff",
+        "on-surface": "#0b1c30",
+        "error": "#ba1a1a",
+        "on-secondary-fixed-variant": "#3f465c",
+        "primary-container": "#dc2626",
+        "secondary": "#565e74",
+        "surface-container-highest": "#d3e4fe",
+        "outline-variant": "#e6bdb8",
+        "secondary-container": "#dae2fd",
+        "on-error-container": "#93000a",
+        "on-tertiary-container": "#f5f8ff",
+        "tertiary": "#005e90",
+        "inverse-primary": "#ffb4ab",
+        "primary-fixed": "#ffdad6",
+        "surface-container-low": "#eff4ff",
+        "primary-fixed-dim": "#ffb4ab",
+        "on-primary-fixed-variant": "#93000b",
+        "on-error": "#ffffff",
+        "error-container": "#ffdad6",
+        "on-primary": "#ffffff",
+        "primary": "#b70011",
+        "background": "#f8f9ff",
+        "tertiary-fixed-dim": "#93ccff",
+        "on-surface-variant": "#5c403c",
+        "inverse-surface": "#213145",
+        "surface-container-lowest": "#ffffff",
+        "on-secondary-container": "#5c647a",
+        "on-primary-container": "#fff6f5",
+        "on-secondary-fixed": "#131b2e",
+        "on-background": "#0b1c30"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      "spacing": {
+        "gutter-mobile": "1rem",
+        "space-2xl": "3rem",
+        "space-3xl": "4rem",
+        "space-md": "1rem",
+        "space-xs": "0.5rem",
+        "space-lg": "1.5rem",
+        "margin-desktop": "2rem",
+        "space-2xs": "0.25rem",
+        "gutter-desktop": "1.5rem",
+        "container-max": "84rem",
+        "space-sm": "0.75rem",
+        "margin-mobile": "1rem",
+        "space-xl": "2rem"
+      },
+      "fontFamily": {
+        "display-lg-mobile": ["Space Grotesk"],
+        "headline-md": ["Space Grotesk"],
+        "body-lg": ["Inter"],
+        "body-sm": ["Inter"],
+        "label-md": ["JetBrains Mono"],
+        "headline-lg": ["Space Grotesk"],
+        "label-lg": ["JetBrains Mono"],
+        "headline-lg-mobile": ["Space Grotesk"],
+        "display-lg": ["Space Grotesk"],
+        "headline-sm": ["Space Grotesk"],
+        "body-md": ["Inter"],
+        "label-sm": ["JetBrains Mono"]
+      },
+      "fontSize": {
+        "display-lg-mobile": ["2.25rem", {"lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "700"}],
+        "headline-md": ["1.5rem", {"lineHeight": "2rem", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+        "body-lg": ["1.125rem", {"lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+        "body-sm": ["0.875rem", {"lineHeight": "1.375rem", "letterSpacing": "0em", "fontWeight": "400"}],
+        "label-md": ["0.75rem", {"lineHeight": "1rem", "letterSpacing": "0.05em", "fontWeight": "500"}],
+        "headline-lg": ["2rem", {"lineHeight": "2.5rem", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+        "label-lg": ["0.875rem", {"lineHeight": "1.25rem", "letterSpacing": "0.025em", "fontWeight": "600"}],
+        "headline-lg-mobile": ["1.5rem", {"lineHeight": "2rem", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+        "display-lg": ["3rem", {"lineHeight": "3.5rem", "letterSpacing": "-0.03em", "fontWeight": "700"}],
+        "headline-sm": ["1.25rem", {"lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "body-md": ["1rem", {"lineHeight": "1.625rem", "letterSpacing": "-0.005em", "fontWeight": "400"}],
+        "label-sm": ["0.6875rem", {"lineHeight": "0.875rem", "letterSpacing": "0.05em", "fontWeight": "500"}]
+      }
+    }
+  }
+}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-gutter-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #e63946 - Font: plusJakartaSans - Mode: dark - Roundness: rounded-md" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VgycrWI-uDmTYSzrqPuQlTlMIogoI0VikjemFVLpHUcX7BRhSPs_GPBXgABeu6xx--6tXoIFC9C_xZELJUNn-X8Rm-v5YRfxXMq0QRfvPYb-A5arg3SPUBX70R-vITuyPfQtEh5iPpguaYpqHr0q60bDUFJ1yGhg4Urqw2vDcUwBFydU-txFPOQWas9O6AUIWBK4_tjFfuFNQzLf6lqN9qQ6jfBn_s4_qJxc0y1mtgcU60zA_U-nNQtEok"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm px-space-xs py-space-2xs rounded uppercase tracking-wider">JLPT N3</span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">JLPT SIMULATOR</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Session #13</span></div><div class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Section 1: 言語知識（文字・語彙・文法）・読解 (Language Knowledge &amp; Reading)</div></div></div><div class="hidden xl:flex items-center gap-space-xl"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded"><span class="material-symbols-outlined text-primary text-[20px]">timer</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">TIME REMAINING</span><span class="font-label-lg text-label-lg text-primary font-bold tracking-wider leading-tight">01:24:29</span></div></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded"><span class="material-symbols-outlined text-secondary text-[20px]">pin</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">EXAM PROGRESS</span><span class="font-label-lg text-label-lg text-on-surface font-bold leading-tight">Q 42 <span class="text-on-surface-variant font-normal">/ 105</span></span></div></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs bg-surface-container-low p-space-2xs rounded"><button class="px-space-xs py-space-2xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface rounded transition-colors" title="Decrease Text Size" type="button">A-</button><button class="px-space-xs py-space-2xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface rounded transition-colors" title="Increase Text Size" type="button">A+</button></div><button class="hidden lg:flex items-center gap-space-2xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface bg-surface-container px-space-sm py-space-xs rounded transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">volume_up</span>Audio</button><button class="bg-primary-container text-on-primary-container font-headline-sm text-headline-sm px-space-md py-space-xs rounded shadow-sm hover:bg-primary transition-all flex items-center gap-space-xs" type="button"><span class="material-symbols-outlined text-[20px]">fact_check</span><span>Submit Section</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-20 bottom-16 w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-md"><div class="flex items-center justify-between pb-space-sm mb-space-md"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface">Question Matrix</span><span class="font-label-sm text-label-sm text-on-surface-variant">Candidate: David #JLPT-8942-TK</span></div><span class="material-symbols-outlined text-on-surface-variant text-[20px]">grid_view</span></div><nav class="flex flex-col gap-space-xs mb-space-md" data-active-classes="bg-surface-container-high text-on-surface font-semibold rounded"><a aria-current="page" class="px-space-xs py-space-2xs transition-colors bg-surface-container-high text-on-surface font-semibold rounded" data-path="live-exam-sheet" href="#">Active Exam Sheet</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface px-space-xs py-space-2xs rounded transition-colors" data-path="section-breakdown" href="#">Mondai Overview</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface px-space-xs py-space-2xs rounded transition-colors" data-path="proctor-instructions" href="#">Exam Hall Guidelines</a></nav><div class="space-y-space-md"><div class="flex flex-col gap-space-2xs"><span class="font-label-md text-label-md text-on-surface font-semibold uppercase tracking-wider">Mondai 1: 漢字読み (Q1 - Q8)</span><div class="grid grid-cols-4 gap-space-xs"><button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">1</button><button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">2</button><button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">3</button><button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">4</button><button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">5</button><button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">6</button><button class="h-8 rounded font-label-md text-label-md bg-surface-container text-on-surface">7</button><button class="h-8 rounded font-label-md text-label-md bg-surface-container text-on-surface">8</button></div></div><div class="flex flex-col gap-space-2xs"><span class="font-label-md text-label-md text-on-surface font-semibold uppercase tracking-wider">Mondai 2: 表記 (Q9 - Q14)</span><div class="grid grid-cols-4 gap-space-xs"><button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">9</button><button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">10</button><button class="h-8 rounded font-label-md text-label-md bg-surface-container text-on-surface relative"><span class="material-symbols-outlined text-[10px] text-primary absolute top-0.5 right-0.5">flag</span>11</button><button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">12</button><button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">13</button><button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">14</button></div></div><div class="flex flex-col gap-space-2xs"><span class="font-label-md text-label-md text-on-surface font-semibold uppercase tracking-wider">Mondai 3: 文法形式の判断 (Q38 - Q45)</span><div class="grid grid-cols-4 gap-space-xs"><button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">38</button><button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">39</button><button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">40</button><button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">41</button><button class="h-8 rounded font-label-md text-label-md bg-primary text-on-primary font-bold shadow">42</button><button class="h-8 rounded font-label-md text-label-md bg-surface-container text-on-surface">43</button><button class="h-8 rounded font-label-md text-label-md bg-surface-container text-on-surface">44</button><button class="h-8 rounded font-label-md text-label-md bg-surface-container text-on-surface">45</button></div></div></div></div><div class="p-space-md bg-surface-container-low m-space-xs rounded flex flex-col gap-space-xs"><div class="flex items-center justify-between font-label-sm text-label-sm"><span class="text-on-surface-variant flex items-center gap-space-2xs"><span class="w-2.5 h-2.5 rounded-full bg-inverse-surface inline-block"></span>Answered</span><span class="font-bold text-on-surface">41</span></div><div class="flex items-center justify-between font-label-sm text-label-sm"><span class="text-on-surface-variant flex items-center gap-space-2xs"><span class="w-2.5 h-2.5 rounded-full bg-surface-container inline-block"></span>Unanswered</span><span class="font-bold text-on-surface">63</span></div><div class="flex items-center justify-between font-label-sm text-label-sm"><span class="text-on-surface-variant flex items-center gap-space-2xs"><span class="material-symbols-outlined text-primary text-[14px]">flag</span>Flagged</span><span class="font-bold text-primary">1</span></div></div></aside><div class="pl-72"><main class="relative pt-20 pb-20 w-full min-h-screen bg-surface px-gutter-desktop"><div class="flex flex-col w-full">
+<!-- Exam Hall Status & Pacing Ribbon -->
+<section class="mb-space-lg">
+<div class="bg-surface-container-lowest rounded p-space-md shadow-sm flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded bg-primary-fixed flex items-center justify-center text-primary font-headline-md text-headline-md font-bold">
+          N3
+        </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface">第1回 日本語能力試験 (JLPT Simulation 2025-A)</span>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-space-xs py-space-2xs rounded uppercase tracking-wider font-semibold">Proctor Monitored</span>
+</div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant mt-space-2xs">
+<span>Room: <strong class="text-on-surface">TK-304</strong></span>
+<span>•</span>
+<span>Desk: <strong class="text-on-surface">B-14</strong></span>
+<span>•</span>
+<span>Examinee: <strong class="text-on-surface">David Vance (8942-TK)</strong></span>
+<span class="hidden sm:inline">•</span>
+<span class="hidden sm:inline-flex items-center gap-space-2xs text-secondary font-medium">
+<span class="w-2 h-2 rounded-full bg-primary inline-block animate-ping"></span>
+              Secure Session Active
+            </span>
+</div>
+</div>
+</div>
+<!-- Quick Session KPI cluster -->
+<div class="flex items-center gap-space-md w-full lg:w-auto justify-between lg:justify-end">
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded">
+<span class="material-symbols-outlined text-primary text-[20px]">speed</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-none">TARGET PACING</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold leading-tight">1.2 min / item</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[20px]">trending_up</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-none">PACE STATUS</span>
+<span class="font-label-lg text-label-lg text-tertiary font-bold leading-tight">+4m ahead</span>
+</div>
+</div>
+<button class="flex items-center gap-space-2xs bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md px-space-md py-space-xs rounded transition-colors" id="toggle-scratchpad" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span class="hidden sm:inline">メモ用紙</span> (Notes)
+        </button>
+</div>
+</div>
+</section>
+<!-- Main Split Architecture: 8 Col Exam Paper | 4 Col Live OMR Palette & Diagnostics -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- LEFT 8 COLS: Authentic Standardized Examination Booklet (問題冊子) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Official Exam Instruction Strip -->
+<div class="bg-surface-container-lowest rounded p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-xs mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm px-space-xs py-space-2xs rounded">言語知識</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">問題 1</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">配点: 各1点 (8問)</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+<span class="font-semibold text-primary">問題 1:</span> <span class="bg-surface-container-high px-space-2xs py-space-2xs rounded font-label-md">____</span>の言葉の読み方として最もよいものを、<strong class="text-on-surface font-semibold">1・2・3・4</strong>から一つ選びなさい。
+        </p>
+<div class="mt-space-xs pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[16px]">touch_app</span>正しい選択肢のマークをクリック、またはテンキー［1 - 4］を押してください。</span>
+<span class="hidden md:inline font-mono text-outline">SHIKEN PAPER N3-01</span>
+</div>
+</div>
+<!-- ACTIVE ITEM: Question 1 (Highlighted Focus Card) -->
+<article class="bg-surface-container-lowest rounded p-space-lg shadow-md transition-all relative">
+<!-- Live Item Pin / Indicator -->
+<div class="absolute -left-1 top-6 w-2 h-12 bg-primary rounded-r"></div>
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center font-label-lg text-label-lg font-bold">1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Kanji Reading (文字・語彙)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="eliminate-toggle text-on-surface-variant hover:text-on-surface flex items-center gap-space-2xs font-label-sm text-label-sm px-space-xs py-space-2xs rounded hover:bg-surface-container transition-colors" title="Elimination Pen / Strikethrough mode" type="button">
+<span class="material-symbols-outlined text-[18px]">strikethrough_s</span>
+<span class="hidden sm:inline">消去線モード</span>
+</button>
+<button class="flag-btn text-primary bg-primary-fixed px-space-xs py-space-2xs rounded font-label-sm text-label-sm flex items-center gap-space-2xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">flag</span>
+<span class="font-semibold">Review Marked</span>
+</button>
+</div>
+</div>
+<!-- Kanji Prompt Statement -->
+<div class="bg-surface-container-low rounded p-space-lg mb-space-lg">
+<p class="font-headline-md text-headline-md text-on-surface leading-loose tracking-wide">
+            この会社は新しい<span class="bg-primary-fixed text-primary px-space-xs py-space-2xs rounded font-bold underline decoration-primary decoration-2 underline-offset-8">規則</span>を作った。
+          </p>
+<div class="mt-space-xs text-on-surface-variant font-body-sm text-body-sm italic">
+            "Kono kaisha wa atarashii kisoku o tsukutta."
+          </div>
+</div>
+<!-- 4-Choice OMR Standard Bubble System -->
+<div class="space-y-space-sm" id="q1-options">
+<!-- Option 1: Selected state -->
+<label class="group flex items-center justify-between p-space-md rounded bg-primary-fixed/40 cursor-pointer shadow-sm transition-all">
+<div class="flex items-center gap-space-md">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center justify-center shadow-xs">
+                1
+              </div>
+<input checked="" class="hidden" name="q1" type="radio" value="1"/>
+<span class="font-headline-sm text-headline-sm text-on-surface font-medium tracking-wider">きそく</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+                マーク済み (Selected)
+              </span>
+<button class="strikethrough-opt text-on-surface-variant hover:text-error p-space-2xs rounded hover:bg-surface-container-high transition-colors" title="Eliminate option" type="button">
+<span class="material-symbols-outlined text-[18px]">block</span>
+</button>
+</div>
+</label>
+<!-- Option 2 -->
+<label class="group flex items-center justify-between p-space-md rounded bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer shadow-sm transition-all">
+<div class="flex items-center gap-space-md">
+<div class="w-7 h-7 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-bold flex items-center justify-center group-hover:bg-inverse-surface group-hover:text-inverse-on-surface transition-colors">
+                2
+              </div>
+<input class="hidden" name="q1" type="radio" value="2"/>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-wider">きぞく</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono opacity-60">Press [2]</span>
+<button class="strikethrough-opt text-on-surface-variant hover:text-error p-space-2xs rounded hover:bg-surface-container transition-colors" title="Eliminate option" type="button">
+<span class="material-symbols-outlined text-[18px]">block</span>
+</button>
+</div>
+</label>
+<!-- Option 3 -->
+<label class="group flex items-center justify-between p-space-md rounded bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer shadow-sm transition-all">
+<div class="flex items-center gap-space-md">
+<div class="w-7 h-7 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-bold flex items-center justify-center group-hover:bg-inverse-surface group-hover:text-inverse-on-surface transition-colors">
+                3
+              </div>
+<input class="hidden" name="q1" type="radio" value="3"/>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-wider">ぎそく</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono opacity-60">Press [3]</span>
+<button class="strikethrough-opt text-on-surface-variant hover:text-error p-space-2xs rounded hover:bg-surface-container transition-colors" title="Eliminate option" type="button">
+<span class="material-symbols-outlined text-[18px]">block</span>
+</button>
+</div>
+</label>
+<!-- Option 4 -->
+<label class="group flex items-center justify-between p-space-md rounded bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer shadow-sm transition-all">
+<div class="flex items-center gap-space-md">
+<div class="w-7 h-7 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-bold flex items-center justify-center group-hover:bg-inverse-surface group-hover:text-inverse-on-surface transition-colors">
+                4
+              </div>
+<input class="hidden" name="q1" type="radio" value="4"/>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-wider">ぎぞく</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono opacity-60">Press [4]</span>
+<button class="strikethrough-opt text-on-surface-variant hover:text-error p-space-2xs rounded hover:bg-surface-container transition-colors" title="Eliminate option" type="button">
+<span class="material-symbols-outlined text-[18px]">block</span>
+</button>
+</div>
+</label>
+</div>
+<div class="mt-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[16px]">history</span>Autosaved 12 seconds ago</span>
+<button class="hover:text-primary transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[16px]">report</span>
+            問題の不備を報告 (Report Issue)
+          </button>
+</div>
+</article>
+<!-- SUBSEQUENT ITEM: Question 2 (Kanji Writing / 表記) -->
+<article class="bg-surface-container-lowest rounded p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded bg-surface-container text-on-surface flex items-center justify-center font-label-lg text-label-lg font-bold">2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Kanji Writing (表記)</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Unanswered</span>
+</div>
+<div class="bg-surface-container-low rounded p-space-md mb-space-md">
+<p class="font-headline-md text-headline-md text-on-surface leading-loose">
+            駅の前に大きな<span class="bg-surface-container-high text-on-surface px-space-xs py-space-2xs rounded font-semibold underline decoration-2 underline-offset-8">たてもの</span>があります。
+          </p>
+</div>
+<!-- Choices in horizontal-flow grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm" id="q2-options">
+<button class="flex items-center gap-space-md p-space-md rounded bg-surface-container-low hover:bg-surface-container text-left transition-colors" type="button">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-bold flex items-center justify-center">1</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-medium">建物</span>
+</button>
+<button class="flex items-center gap-space-md p-space-md rounded bg-surface-container-low hover:bg-surface-container text-left transition-colors" type="button">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-bold flex items-center justify-center">2</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-medium">健物</span>
+</button>
+<button class="flex items-center gap-space-md p-space-md rounded bg-surface-container-low hover:bg-surface-container text-left transition-colors" type="button">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-bold flex items-center justify-center">3</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-medium">建者</span>
+</button>
+<button class="flex items-center gap-space-md p-space-md rounded bg-surface-container-low hover:bg-surface-container text-left transition-colors" type="button">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-bold flex items-center justify-center">4</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-medium">健者</span>
+</button>
+</div>
+</article>
+<!-- ADVANCED COMPREHENSION PREVIEW: Dokkai (短文読解) -->
+<article class="bg-surface-container-lowest rounded p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="bg-tertiary text-on-tertiary font-label-sm text-label-sm px-space-xs py-space-2xs rounded">読解 (Reading)</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">問題 7: 短文読解 (Question 71 Preview)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">150〜200字程度</span>
+</div>
+<!-- Authentic Notice Sheet Presentation Box -->
+<div class="bg-surface-container-low rounded p-space-lg shadow-inner mb-space-md relative">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm font-semibold tracking-wider text-tertiary uppercase">【案内 / Notice】</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2025年4月1日</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-center mb-space-md font-bold tracking-tight">
+            図書室の利用時間変更について
+          </h4>
+<div class="font-body-md text-body-md text-on-surface space-y-space-sm leading-relaxed">
+<p>
+              来週の月曜日（4月7日）から、校舎工事のため図書室の開館時間が以下の通り変更になります。
+            </p>
+<div class="bg-surface-container-lowest rounded p-space-md my-space-xs space-y-space-2xs font-label-md text-label-md">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">平日 (月〜金):</span>
+<span class="font-bold text-on-surface">午前9時00分 〜 午後5時00分 （通常より1時間短縮）</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">土曜日:</span>
+<span class="font-bold text-error">休館 (Closed completely for construction)</span>
+</div>
+</div>
+<p>
+              本の返却については、玄関前の返却ポストを24時間利用できます。ご不便をおかけしますが、ご協力をお願いいたします。
+            </p>
+</div>
+</div>
+<!-- Question Prompt for the Passage -->
+<div class="mb-space-md">
+<p class="font-headline-sm text-headline-sm text-on-surface font-medium">
+            問: このお知らせによると、来週の土曜日に本を返したい人はどうすればいいですか。
+          </p>
+</div>
+<!-- Mini choices grid -->
+<div class="space-y-space-xs">
+<div class="p-space-sm rounded bg-surface-container-low hover:bg-surface-container cursor-pointer flex items-center gap-space-sm transition-colors">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-bold flex items-center justify-center">1</span>
+<span class="font-body-md text-body-md text-on-surface">午前9時から午後5時の間に図書室へ行く。</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low hover:bg-surface-container cursor-pointer flex items-center gap-space-sm transition-colors">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-bold flex items-center justify-center">2</span>
+<span class="font-body-md text-body-md text-on-surface">玄関前にある返却ポストに入れる。</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low hover:bg-surface-container cursor-pointer flex items-center gap-space-sm transition-colors">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-bold flex items-center justify-center">3</span>
+<span class="font-body-md text-body-md text-on-surface">次の月曜日の午後5時まで待たなければならない。</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low hover:bg-surface-container cursor-pointer flex items-center gap-space-sm transition-colors">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-bold flex items-center justify-center">4</span>
+<span class="font-body-md text-body-md text-on-surface">工事が終わるまで返却することはできない。</span>
+</div>
+</div>
+</article>
+<!-- Scratchpad Floating Note Drawer (Collapsible) -->
+<div class="bg-surface-container-low rounded p-space-md shadow-sm hidden" id="scratchpad-box">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">sticky_note_2</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">メモ用紙 (Candidate Scratchpad)</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" id="close-scratchpad" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<textarea class="w-full bg-surface-container-lowest rounded p-space-sm font-label-md text-label-md text-on-surface outline-none focus:bg-surface-container-lowest placeholder:text-on-surface-variant" placeholder="You can type quick rough notes, furigana drafts, or stroke order reminders here. Notes are not submitted or graded." rows="3"></textarea>
+</div>
+</div>
+<!-- RIGHT 4 COLS: Tactical OMR Answer Matrix, Analytics, and Official Rules -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Official OMR Sheet Overview Card -->
+<div class="bg-surface-container-lowest rounded p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-md pb-space-xs">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">解答用紙 (OMR Sheet)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Section 1: 105 Items Total</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[24px]">ballot</span>
+</div>
+<!-- Metric Filter Pills -->
+<div class="grid grid-cols-2 gap-space-xs mb-space-md">
+<button class="flex flex-col p-space-xs rounded bg-surface-container-high hover:bg-surface-variant transition-colors text-left" type="button">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Answered</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">41 <span class="font-label-sm text-label-sm font-normal text-on-surface-variant">/ 105</span></span>
+</button>
+<button class="flex flex-col p-space-xs rounded bg-error-container/40 hover:bg-error-container transition-colors text-left" type="button">
+<span class="font-label-sm text-label-sm text-on-error-container">Flagged</span>
+<span class="font-headline-sm text-headline-sm text-error font-bold">3 <span class="font-label-sm text-label-sm font-normal text-on-error-container">Review</span></span>
+</button>
+</div>
+<!-- Section Progress Indicator Strip -->
+<div class="mb-space-md">
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-space-2xs">
+<span class="text-on-surface-variant font-medium">Language Knowledge Progress</span>
+<span class="font-bold text-on-surface">39%</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 39%"></div>
+<div class="h-full bg-tertiary-container" style="width: 5%"></div>
+</div>
+</div>
+<!-- Interactive Question Navigation Matrix -->
+<div class="space-y-space-md">
+<!-- Sub-block 1: Vocabulary & Kanji -->
+<div>
+<div class="flex items-center justify-between mb-space-2xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">文字・語彙 (Vocabulary Q1-Q35)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">28 / 35 done</span>
+</div>
+<div class="grid grid-cols-7 gap-1">
+<!-- Q1 (Active) -->
+<button class="h-8 rounded font-label-md text-label-md bg-primary text-on-primary font-bold shadow-sm">1</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">2</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">3</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">4</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">5</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">6</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">7</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">8</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">9</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">10</button>
+<button class="h-8 rounded font-label-md text-label-md bg-surface-container text-on-surface relative"><span class="w-2 h-2 rounded-full bg-primary absolute top-1 right-1"></span>11</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">12</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">13</button>
+<button class="h-8 rounded font-label-md text-label-md bg-surface-container text-on-surface relative"><span class="w-2 h-2 rounded-full bg-primary absolute top-1 right-1"></span>14</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">15</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">16</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">17</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">18</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">19</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">20</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">21</button>
+</div>
+</div>
+<!-- Sub-block 2: Grammar -->
+<div>
+<div class="flex items-center justify-between mb-space-2xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">文法 (Grammar Q36-Q70)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">13 / 35 done</span>
+</div>
+<div class="grid grid-cols-7 gap-1">
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">36</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">37</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">38</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">39</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">40</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">41</button>
+<button class="h-8 rounded font-label-md text-label-md bg-inverse-surface text-inverse-on-surface">42</button>
+<button class="h-8 rounded font-label-md text-label-md bg-surface-container text-on-surface">43</button>
+<button class="h-8 rounded font-label-md text-label-md bg-surface-container text-on-surface">44</button>
+<button class="h-8 rounded font-label-md text-label-md bg-surface-container text-on-surface">45</button>
+<button class="h-8 rounded font-label-md text-label-md bg-surface-container text-on-surface">46</button>
+<button class="h-8 rounded font-label-md text-label-md bg-surface-container text-on-surface">47</button>
+<button class="h-8 rounded font-label-md text-label-md bg-surface-container text-on-surface">48</button>
+<button class="h-8 rounded font-label-md text-label-md bg-surface-container text-on-surface">49</button>
+</div>
+</div>
+</div>
+<!-- Legend -->
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-space-2xs"><span class="w-3 h-3 rounded bg-inverse-surface inline-block"></span>マーク済 (Answered)</span>
+<span class="flex items-center gap-space-2xs"><span class="w-3 h-3 rounded bg-primary inline-block"></span>現在 (Active)</span>
+<span class="flex items-center gap-space-2xs"><span class="w-3 h-3 rounded bg-surface-container inline-block"></span>未解答 (Pending)</span>
+<span class="flex items-center gap-space-2xs"><span class="w-2.5 h-2.5 rounded-full bg-primary inline-block"></span>見直し (Flagged)</span>
+</div>
+</div>
+<!-- Proctor & Security Notice Card -->
+<div class="bg-surface-container-lowest rounded p-space-md shadow-sm">
+<div class="flex items-center gap-space-xs text-on-surface mb-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span>
+<span class="font-headline-sm text-headline-sm">試験監督規定 (Exam Rules)</span>
+</div>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary mt-1">check</span>
+<span>辞書・外部翻訳ツールの参照は禁止されています (No dictionary aids allowed).</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary mt-1">check</span>
+<span>ブラウザのフルスクリーン解除は不正行為とみなされます (Full screen enforced).</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary mt-1">check</span>
+<span>残り時間10分および5分で自動警告が表示されます。</span>
+</li>
+</ul>
+</div>
+<!-- Real-time Exam Scoring Distribution Chart (Inline SVG) -->
+<div class="bg-surface-container-lowest rounded p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">得点目安 (Passing Line Guide)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">合格点: 95 / 180</span>
+</div>
+<div class="py-space-xs">
+<svg class="w-full h-24 text-primary" fill="none" viewbox="0 0 320 80">
+<!-- Background grid lines -->
+<line stroke="#E5EEFF" stroke-width="1" x1="0" x2="320" y1="20" y2="20"></line>
+<line stroke="#E5EEFF" stroke-width="1" x1="0" x2="320" y1="40" y2="40"></line>
+<line stroke="#E5EEFF" stroke-width="1" x1="0" x2="320" y1="60" y2="60"></line>
+<!-- Standard passing threshold vertical marker -->
+<line stroke="#BA1A1A" stroke-dasharray="4 2" stroke-width="1.5" x1="168" x2="168" y1="0" y2="80"></line>
+<text fill="#BA1A1A" font-family="JetBrains Mono" font-size="10" font-weight="600" x="172" y="14">PASS (95)</text>
+<!-- Current estimated distribution wave -->
+<path d="M10 65 Q 60 62, 110 45 T 180 25 T 250 50 T 310 70" fill="none" stroke="#005E90" stroke-width="2.5"></path>
+<!-- Candidate projection point -->
+<circle cx="195" cy="30" fill="#DC2626" r="4"></circle>
+<text fill="#0B1C30" font-family="JetBrains Mono" font-size="9" x="185" y="55">Est: 112pts</text>
+</svg>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-space-xs">
+<span>文字・語彙・文法 (60点)</span>
+<span>読解 (60点)</span>
+<span>聴解 (60点)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Floating Examination Controls Dock -->
+<aside class="sticky bottom-4 z-30 mt-space-xl bg-surface-container-lowest rounded shadow-xl p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-space-2xs bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md px-space-md py-space-xs rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span class="hidden sm:inline">前の問題 (Previous)</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface-variant hidden md:inline">
+        現在選択中: <strong class="text-on-surface">問題 1</strong>
+</span>
+</div>
+<div class="flex items-center gap-space-md">
+<button class="flex items-center gap-space-2xs text-secondary hover:text-primary font-label-md text-label-md px-space-xs py-space-xs rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+<span class="hidden sm:inline">マークを保持</span>
+</button>
+<button class="flex items-center gap-space-xs bg-primary hover:bg-surface-tint text-on-primary font-headline-sm text-headline-sm px-space-xl py-space-xs rounded shadow-md transition-all" type="button">
+<span>次の問題へ (Save &amp; Next)</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</aside>
+</div>
+<script>
+  // Scratchpad toggle behavior
+  const scratchpadBtn = document.getElementById('toggle-scratchpad');
+  const scratchpadBox = document.getElementById('scratchpad-box');
+  const closeScratchpad = document.getElementById('close-scratchpad');
+
+  if (scratchpadBtn && scratchpadBox) {
+    scratchpadBtn.addEventListener('click', () => {
+      scratchpadBox.classList.toggle('hidden');
+    });
+  }
+
+  if (closeScratchpad && scratchpadBox) {
+    closeScratchpad.addEventListener('click', () => {
+      scratchpadBox.classList.add('hidden');
+    });
+  }
+
+  // Interactive elimination strikethrough logic for question choices
+  document.querySelectorAll('.strikethrough-opt').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      const parentOption = btn.closest('label');
+      if (parentOption) {
+        parentOption.classList.toggle('opacity-30');
+        parentOption.classList.toggle('line-through');
+      }
+    });
+  });
+
+  // Radio selection style updates
+  const q1Radios = document.querySelectorAll('input[name="q1"]');
+  q1Radios.forEach((radio) => {
+    radio.addEventListener('change', () => {
+      document.querySelectorAll('#q1-options label').forEach((lbl) => {
+        lbl.classList.remove('bg-primary-fixed/40');
+        const badge = lbl.querySelector('.text-primary');
+        if (badge && !lbl.contains(radio)) {
+          badge.remove();
+        }
+      });
+      if (radio.checked) {
+        radio.closest('label').classList.add('bg-primary-fixed/40');
+      }
+    });
+  });
+</script></main><footer class="fixed bottom-0 left-72 right-0 h-16 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-space-md py-space-xs rounded bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">arrow_back</span><span>Previous Question</span></button><button class="flex items-center gap-space-xs font-label-md text-label-md text-on-primary bg-primary hover:bg-surface-tint px-space-md py-space-xs rounded shadow-sm transition-colors" type="button"><span>Next Question</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div><div class="flex items-center gap-space-lg"><label class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface select-none cursor-pointer"><input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/><span class="material-symbols-outlined text-primary text-[18px]">flag</span><span>Mark question for review</span></label><div class="hidden sm:flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[18px]">keyboard</span><span>Use keys [1 - 4] to answer</span></div></div></footer></div></body></html>

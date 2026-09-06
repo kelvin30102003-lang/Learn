@@ -26,6 +26,27 @@ body {
 
 * { box-sizing: border-box; }
 
+@media (min-width: 1024px) {
+  .portal-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 260px;
+    z-index: 20;
+  }
+
+  .portal-main {
+    margin-left: 260px;
+    padding-top: 6rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .portal-sidebar {
+    min-height: auto;
+  }
+}
+
 ::selection { background: #f5c4ba; color: #17201d; }
 
 .paper-grid {

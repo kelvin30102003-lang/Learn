@@ -1,0 +1,26 @@
+{
+  "test": {
+    "title": "N5 Practice — draft",
+    "description": "Review all text and ensure you have publishing rights before activating this test.",
+    "level": "N5",
+    "duration_minutes": 60,
+    "is_premium": false,
+    "is_active": false
+  },
+  "questions": [
+    {
+      "number": 1,
+      "section": "Vocabulary",
+      "question_type": "multiple_choice",
+      "question_text": "Replace this text with the reviewed question from your source.",
+      "choices": [
+        { "key": "A", "text": "Choice A", "is_correct": true },
+        { "key": "B", "text": "Choice B", "is_correct": false },
+        { "key": "C", "text": "Choice C", "is_correct": false },
+        { "key": "D", "text": "Choice D", "is_correct": false }
+      ],
+      "explanation": "Add your explanation here.",
+      "points": 1
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+export default function YearlyMockExamLoading() {
+  return <div className="mx-auto w-full max-w-5xl animate-pulse px-5 py-10 lg:py-16"><div className="h-4 w-40 rounded bg-slate-200" /><div className="mt-10 h-12 w-2/3 rounded bg-slate-200" /><div className="mt-4 h-6 w-3/4 rounded bg-slate-200" /><div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-6">{Array.from({ length: 18 }, (_, index) => <div key={index} className="h-16 rounded-xl bg-slate-200" />)}</div></div>;
+}
